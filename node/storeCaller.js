@@ -46,9 +46,11 @@ function compileHTMLForProducts(products) {
         let div = `
         <div class = "product-container" id = "${product.id}">
         <img src = "${product.img}"/>
+        <div class="description">
         <h3>${product.title}</h3>
         <p>${product.price},-</p>
         <a href="${product.link}">View</a>
+        </div>
         </div>
         `
         html += div
